@@ -1,0 +1,33 @@
+{
+  "name": "local-first-cloud",
+  "version": "0.1.0",
+  "description": "Personal cloud storage shim - an S3-compatible API that stores files locally on your machine, with encrypted backup to anywhere. Zero dependencies.",
+  "type": "module",
+  "main": "lib/server.js",
+  "bin": {
+    "lfc": "bin/lfc.js",
+    "local-first-cloud": "bin/lfc.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/xml.test.js test/sigv4.test.js test/config.test.js test/store.test.js test/backup.test.js test/server.test.js test/cli.test.js",
+    "start": "node bin/lfc.js start"
+  },
+  "keywords": [
+    "s3",
+    "s3-compatible",
+    "local-first",
+    "storage",
+    "self-hosted",
+    "backup",
+    "encryption",
+    "zero-dependency"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fuleinist/local-first-cloud"
+  }
+}

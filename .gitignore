@@ -1,0 +1,7 @@
+node_modules/
+*.log
+.lfc/
+data/
+*.lfcb
+.DS_Store
+Thumbs.db
